@@ -1,0 +1,606 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*.base*/
+
+body {
+  position: relative;
+  width: 100%;
+  height: 969px;
+  background-image: url(/dist/images/base-rec.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+
+.topb {
+  position: absolute;
+  width: 600px;
+  height: 370px;
+  left: 0px;
+}
+.ellipsed {
+  display: none;
+}
+.dark-mode-button.top-dark-mode-button {
+  position: absolute;
+  top: 850px;
+  left: 465px;
+}
+
+.stack {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  background-size: 220%;
+  background-color: #ffffff;
+  background-position: 100%;
+  border: 0px solid #2114fd;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+  font-weight: 900;
+  cursor: pointer;
+  background-image: linear-gradient(
+    100deg,
+    black 0%,
+    black 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  animation: roll-in 2.5s cubic-bezier(0.25, 1, 0.5, 1) 1;
+}
+
+a .stack:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+  background-position: 0;
+  color: #fff;
+}
+
+a .stack:active {
+  transform: translateY(-1px);
+}
+
+.twitter {
+  position: absolute;
+  left: 150px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  background-size: 220%;
+  background-color: transparent;
+  background-position: 100%;
+  border: 0px solid #2114fd;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+  font-weight: 900;
+  cursor: pointer;
+  background-image: linear-gradient(
+    100deg,
+    #ffffff 0%,
+    #ffffff 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  animation: roll-in 2s cubic-bezier(0.25, 1, 0.5, 1) 1;
+}
+a .twitter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0.3em rgba(0, 0, 0, 0.25);
+  background-position: 0;
+  color: #fff;
+}
+
+a .twitter:active {
+  transform: translateY(-1px);
+}
+
+.git {
+  position: absolute;
+  left: 240px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  background-size: 220%;
+  background-color: transparent;
+  background-position: 100%;
+  border: 0px solid transparent;
+  border-radius: 30px;
+  transition: all 0.2s ease-out;
+  font-weight: 900;
+  cursor: pointer;
+  background-image: linear-gradient(
+    100deg,
+    #fff 0%,
+    #fff 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  animation: roll-in 1.5s cubic-bezier(0.25, 1, 0.5, 1) 1;
+}
+a .git:hover {
+  transform: translateY(-2px);
+  background-position: 0;
+  color: #fff;
+}
+
+a .git:active {
+  transform: translateY(-1px);
+}
+
+.linkedin {
+  position: absolute;
+  left: 330px;
+  top: 60px;
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  background-size: 220%;
+  background-color: transparent;
+  background-position: 100%;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+  font-weight: 900;
+  cursor: pointer;
+  background-image: linear-gradient(
+    100deg,
+    #fff 0%,
+    #fff 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  animation: roll-in 1s cubic-bezier(0.25, 1, 0.5, 1) 1;
+}
+a .linkedin:hover {
+  transform: translateY(-2px);
+  background-position: 0;
+  color: #fff;
+}
+a .linkedin:active {
+  transform: translateY(-1px);
+}
+@keyframes roll-in {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+.yahia {
+  width: 638px;
+  position: absolute;
+  top: 400px;
+  left: 150px;
+}
+
+.softwaredev {
+  width: 492px;
+  position: absolute;
+  top: 500px;
+  left: 233px;
+}
+
+.email {
+  width: 630px;
+  position: absolute;
+  top: 650px;
+  left: 160px;
+}
+
+.tel {
+  width: 370px;
+  position: absolute;
+  top: 730px;
+  left: 290px;
+}
+
+.rec {
+  width: 1100px;
+  height: 969px;
+  position: absolute;
+  right: 0;
+}
+.recd {
+  display: none;
+}
+
+.logicimagine {
+  position: absolute;
+  right: 250px;
+  top: 500px;
+  width: 275px;
+
+  filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  animation: boogie-box 40s ease infinite;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+@keyframes boogie-box {
+  0% {
+    background: transparent;
+
+    transform: translate(1rem, -1rem);
+  }
+
+  12.5% {
+    transform: translate(-1rem, 1rem);
+  }
+
+  25% {
+    transform: translate(1rem, -1rem);
+  }
+
+  37.5% {
+    transform: translate(1rem, 1rem);
+  }
+
+  50% {
+    transform: translate(-1rem, -1rem);
+  }
+
+  62.5% {
+    transform: translate(1rem, 1rem);
+  }
+
+  75% {
+    transform: translate(-1rem, -1rem);
+  }
+
+  87.5% {
+    transform: translate(-1rem, 1rem);
+  }
+
+  100% {
+    background: transparent;
+
+    transform: translate(1rem, -1rem);
+  }
+}
+.arrowr {
+  position: absolute;
+  right: 5px;
+  top: 40px;
+  width: 72px;
+  height: 72px;
+}
+
+.arrowr1 {
+  position: absolute;
+  right: 5px;
+  top: 160px;
+  width: 72px;
+  height: 72px;
+}
+
+.projects {
+  position: absolute;
+  right: 90px;
+  top: 42px;
+}
+.projects:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.skills {
+  position: absolute;
+  right: 90px;
+  top: 165px;
+}
+.skills:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/*--Projects Page--*/
+
+/*----end of the main css----*/
+
+@media screen and (max-width: 1780px) {
+  .rec {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 1690px) {
+  .rec {
+    width: 750px;
+  }
+  .logicimagine {
+    width: 250px;
+    right: 150px;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .rec {
+    width: 750px;
+  }
+  .logicimagine {
+    width: 250px;
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .topb {
+    width: 500px;
+  }
+  .dark-mode-button.top-dark-mode-button {
+    position: absolute;
+    top: 850px;
+    left: 340px;
+  }
+
+  .yahia {
+    width: 538px;
+    position: absolute;
+    top: 400px;
+    left: 80px;
+  }
+  .softwaredev {
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    left: 155px;
+  }
+
+  .email {
+    width: 530px;
+    position: absolute;
+    top: 650px;
+    left: 85px;
+  }
+
+  .tel {
+    width: 270px;
+    position: absolute;
+    top: 730px;
+    left: 215px;
+  }
+  .rec {
+    width: 700px;
+  }
+
+  .logicimagine {
+    width: 250px;
+    right: 150px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .rec {
+    width: 600px;
+  }
+  .logicimagine {
+    top: 400px;
+    width: 200px;
+    right: 100px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  .rec {
+    width: 500px;
+  }
+  .logicimagine {
+    top: 500px;
+    width: 180px;
+    right: 100px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .rec {
+    width: 400px;
+  }
+  .logicimagine {
+    top: 500px;
+    width: 180px;
+    right: 60px;
+  }
+
+  .projects {
+    position: absolute;
+    right: 75px;
+    top: 42px;
+  }
+
+  .skills {
+    position: absolute;
+    right: 75px;
+    top: 165px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .rec {
+    width: 300px;
+  }
+  .logicimagine {
+    top: 500px;
+    width: 150px;
+    right: 40px;
+  }
+  .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 115px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .projects {
+    width: 165px;
+    position: absolute;
+    right: 60px;
+    top: 42px;
+  }
+
+  .skills {
+    width: 110px;
+    position: absolute;
+    right: 60px;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .dark-mode-button.top-dark-mode-button {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+  }
+
+  .yahia {
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+  }
+  .softwaredev {
+    width: 320px;
+    position: absolute;
+    top: 460px;
+    left: 194px;
+  }
+
+  .email {
+    width: 370px;
+    position: absolute;
+    top: 550px;
+    left: 170px;
+  }
+
+  .tel {
+    width: 220px;
+    position: absolute;
+    top: 600px;
+    left: 250px;
+  }
+  .rec {
+    display: none;
+  }
+
+  .logicimagine {
+    top: 700px;
+    width: 170px;
+    right: 350px;
+  }
+  .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 170px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .projects {
+    width: 165px;
+    position: absolute;
+    right: 60px;
+    top: 170px;
+  }
+
+  .skills {
+    width: 110px;
+    position: absolute;
+    right: 60px;
+    top: 250px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .logicimagine {
+    right: 200px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .yahia {
+    width: 400px;
+    position: relative;
+    top: 400px;
+    left: 53px;
+  }
+  .softwaredev {
+    width: 350px;
+    position: absolute;
+    top: 460px;
+    left: 84px;
+  }
+
+  .email {
+    width: 410px;
+    position: absolute;
+    top: 550px;
+    left: 50px;
+  }
+
+  .tel {
+    width: 255px;
+    position: absolute;
+    top: 600px;
+    left: 130px;
+  }
+
+  .logicimagine {
+    top: 700px;
+    width: 150px;
+    right: 170px;
+  }
+  .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 220px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 300px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .projects {
+    width: 165px;
+    position: absolute;
+    right: 60px;
+    top: 220px;
+  }
+
+  .skills {
+    width: 110px;
+    position: absolute;
+    right: 60px;
+    top: 300px;
+  }
+}

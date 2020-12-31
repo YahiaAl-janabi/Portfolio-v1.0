@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 969px;
+  background-image: url(/dist/images/base-rec.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#db {
+  position: absolute;
+  left: 100px;
+  top: 870px;
+}
+.precd {
+  display: none;
+}
+.prec {
+  position: absolute;
+  height: 969px;
+  left: 0px;
+}
+
+.parrow {
+  position: absolute;
+  left: 5px;
+  top: 40px;
+  width: 72px;
+  height: 72px;
+}
+
+.main {
+  position: absolute;
+  left: 90px;
+  top: 49px;
+}
+.main:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.projectst {
+  position: absolute;
+  left: 850px;
+  top: 42px;
+}
+.samah- {
+  position: absolute;
+  left: 590px;
+  top: 200px;
+}
+
+.samahlogo {
+  width: 200px;
+  position: absolute;
+  left: 750px;
+  top: 175px;
+}
+
+.samahe {
+  width: 300px;
+  position: absolute;
+  left: 965px;
+  top: 210px;
+}
+
+@media screen and (max-width: 1350px) {
+  .projectst {
+    position: absolute;
+    left: 500px;
+    top: 42px;
+  }
+  .samah- {
+    position: absolute;
+    left: 390px;
+    top: 200px;
+  }
+
+  .samahlogo {
+    width: 200px;
+    position: absolute;
+    left: 550px;
+    top: 175px;
+  }
+  .samahe {
+    width: 300px;
+    position: absolute;
+    left: 505px;
+    top: 275px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #db {
+    position: absolute;
+    left: 50px;
+    top: 870px;
+  }
+  .prec {
+    height: 969px;
+    position: absolute;
+    left: 0;
+    width: 300px;
+  }
+
+  .parrow {
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .main {
+    position: absolute;
+    left: 60px;
+    top: 45px;
+    width: 110px;
+  }
+
+  .projectst {
+    position: absolute;
+    left: 300px;
+    top: 35px;
+    width: 250px;
+  }
+  .samah- {
+    position: absolute;
+    left: 190px;
+    top: 200px;
+  }
+
+  .samahlogo {
+    width: 200px;
+    position: absolute;
+    left: 350px;
+    top: 175px;
+  }
+
+  .samahe {
+    width: 300px;
+    position: absolute;
+    left: 300px;
+    top: 275px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  #db {
+    position: absolute;
+    left: 30px;
+    top: 870px;
+  }
+  .prec {
+    height: 969px;
+    position: absolute;
+    left: 0;
+    width: 200px;
+  }
+
+  .parrow {
+    position: absolute;
+    left: 5px;
+    top: 40px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .main {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 80px;
+  }
+
+  .projectst {
+    position: absolute;
+    left: 200px;
+    top: 35px;
+    width: 200px;
+  }
+  .samah- {
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+  }
+
+  .samahlogo {
+    width: 200px;
+    position: absolute;
+    left: 210px;
+    top: 175px;
+  }
+
+  .samahe {
+    width: 200px;
+    position: absolute;
+    left: 210px;
+    top: 275px;
+  }
+}

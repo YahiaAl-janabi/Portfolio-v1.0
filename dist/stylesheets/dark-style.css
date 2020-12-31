@@ -1,0 +1,655 @@
+body.dark-mode * {
+  padding: 0%;
+  margin: 0%;
+}
+body.dark-mode {
+  position: relative;
+  width: 100%;
+  height: 969px;
+  background-image: url(/dist/images/base-recd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body.dark-mode #body2 {
+  position: relative;
+  width: 100%;
+  height: 969px;
+  background-image: url(/dist/images/base-recd.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+
+body.dark-mode .rec {
+  display: none;
+}
+body.dark-mode .recd {
+  display: initial;
+  width: 1100px;
+  height: 969px;
+  position: absolute;
+  right: 0;
+  overflow: visible;
+}
+body.dark-mode .topb {
+  display: none;
+}
+body.dark-mode .ellipsed {
+  display: block;
+  position: absolute;
+  width: 600px;
+  height: 370px;
+  left: 0px;
+}
+body.dark-mode .git {
+  background-color: white;
+}
+body.dark-mode .prec {
+  display: none;
+}
+body.dark-mode .precd {
+  display: initial;
+
+  height: 969px;
+  position: absolute;
+  left: -10px;
+}
+
+body.dark-mode .minred1 {
+  display: none;
+}
+body.dark-mode .minrec1 {
+  display: none;
+}
+body.dark-mode .srec1d {
+  display: initial;
+  width: 800px;
+  height: 969px;
+  position: absolute;
+  left: -15px;
+}
+body.dark-mode .srec1 {
+  display: none;
+}
+body.dark-mode .minrecd2 {
+  display: none;
+}
+body.dark-mode .minrec2 {
+  display: none;
+}
+body.dark-mode .srec2d {
+  display: initial;
+  width: 750px;
+  height: 969px;
+  position: absolute;
+  right: -15px;
+}
+body.dark-mode .srec2 {
+  display: none;
+}
+:root {
+  --dark: #000;
+  --medium: #1b1b1b;
+  --light: #2e2e2e;
+}
+
+.dark-mode-button {
+  background: transparent;
+  border: none;
+  height: 40px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.top-dark-mode-button {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 1000;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.top-dark-mode-button .dark-toggle {
+  background: rgb(230, 230, 230);
+  border-color: rgb(230, 230, 230);
+  width: 35px;
+}
+
+.top-dark-mode-button:after {
+  content: "DARK";
+  position: absolute;
+  color: #fff;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 22px;
+  top: 10px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+body.dark-mode .top-dark-mode-button:after {
+  content: "LIGHT";
+  color: var(--primary);
+  top: 12px;
+}
+
+.dark-toggle {
+  margin: 0;
+  width: 30px;
+  height: 16px;
+  z-index: 20;
+  border-radius: 10px;
+  background: transparent;
+  border: 3px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 1000;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+body.dark-mode .dark-toggle {
+  background: rgb(67, 183, 255);
+  background: -o-linear-gradient(
+    left,
+    rgba(67, 183, 255, 1) 0%,
+    rgba(0, 221, 246, 1) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(67, 183, 255, 1)),
+    to(rgba(0, 221, 246, 1))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(67, 183, 255, 1) 0%,
+    rgba(0, 221, 246, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#43b7ff",endColorstr="#00ddf6",GradientType=1);
+  border: none;
+}
+
+.dark-toggle span {
+  height: 20px;
+  width: 20px;
+  left: -8px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body.dark-mode .dark-toggle span {
+  left: 15px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.top-dark-mode-button .dark-toggle {
+  background: rgb(230, 230, 230);
+  border-color: rgb(230, 230, 230);
+  width: 35px;
+}
+@media screen and (max-width: 1870px) {
+  body.dark-mode .srec2d {
+    width: 600px;
+    height: 969px;
+    position: absolute;
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  body.dark-mode .recd {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 1690px) {
+  body.dark-mode .recd {
+    width: 750px;
+  }
+  body.dark-mode .logicimagine {
+    width: 250px;
+    right: 150px;
+  }
+}
+@media screen and (max-width: 1615px) {
+  body.dark-mode .srec1d {
+    width: 700px;
+    height: 969px;
+    position: absolute;
+    left: 0px;
+  }
+  body.dark-mode .srec2d {
+    width: 700px;
+    height: 969px;
+    position: absolute;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1570px) {
+  body.dark-mode .srec1d {
+    width: 650px;
+    height: 969px;
+    position: absolute;
+    left: 0px;
+  }
+  body.dark-mode .srec2d {
+    width: 650px;
+    height: 969px;
+    position: absolute;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1530px) {
+  body.dark-mode .recd {
+    width: 750px;
+  }
+  body.dark-mode .logicimagine {
+    width: 250px;
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  body.dark-mode .topb {
+    width: 500px;
+  }
+  body.dark-mode .dark-mode-button.top-dark-mode-button {
+    position: absolute;
+    top: 850px;
+    left: 340px;
+  }
+
+  body.dark-mode .yahia {
+    width: 538px;
+    position: absolute;
+    top: 400px;
+    left: 80px;
+  }
+  body.dark-mode .softwaredev {
+    width: 400px;
+    position: absolute;
+    top: 500px;
+    left: 155px;
+  }
+
+  body.dark-mode .email {
+    width: 530px;
+    position: absolute;
+    top: 650px;
+    left: 85px;
+  }
+
+  body.dark-mode .tel {
+    width: 270px;
+    position: absolute;
+    top: 730px;
+    left: 215px;
+  }
+  body.dark-mode .recd {
+    width: 700px;
+  }
+
+  body.dark-mode .logicimagine {
+    width: 250px;
+    right: 150px;
+  }
+}
+@media screen and (max-width: 1410px) {
+  body.dark-mode .srec1d {
+    width: 550px;
+    height: 969px;
+    position: absolute;
+    left: 0px;
+  }
+  body.dark-mode .srec2d {
+    width: 650px;
+    height: 969px;
+    position: absolute;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1320px) {
+  body.dark-mode .srec1d {
+    width: 550px;
+    height: 969px;
+    position: absolute;
+    left: 0px;
+  }
+  body.dark-mode .srec2d {
+    width: 600px;
+    height: 969px;
+    position: absolute;
+    right: 0px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  body.dark-mode .recd {
+    width: 600px;
+  }
+  body.dark-mode .logicimagine {
+    top: 400px;
+    width: 200px;
+    right: 100px;
+  }
+}
+@media screen and (max-width: 1220px) {
+  body.dark-mode #body2 {
+    height: 1900px;
+  }
+  body.dark-mode .srec1d {
+    display: none;
+  }
+  body.dark-mode .minrecd1 {
+    display: initial;
+    position: absolute;
+    left: -10px;
+    width: 1300px;
+    height: 700px;
+  }
+  body.dark-mode .srec2d {
+    display: none;
+  }
+  body.dark-mode .minrecd2 {
+    display: initial;
+    position: absolute;
+    left: -10px;
+    bottom: 0px;
+    width: 1300px;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  body.dark-mode .recd {
+    width: 500px;
+  }
+  body.dark-mode .logicimagine {
+    top: 500px;
+    width: 180px;
+    right: 100px;
+  }
+}
+@media screen and (max-width: 1070px) {
+  body.dark-mode .recd {
+    width: 400px;
+  }
+  body.dark-mode .logicimagine {
+    top: 500px;
+    width: 180px;
+    right: 60px;
+  }
+  body.dark-mode .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    width: 72px;
+    height: 72px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 160px;
+    width: 72px;
+    height: 72px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .projects {
+    position: absolute;
+    right: 75px;
+    top: 42px;
+  }
+
+  body.dark-mode .skills {
+    position: absolute;
+    right: 75px;
+    top: 165px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body.dark-mode .recd {
+    width: 300px;
+  }
+  body.dark-mode .logicimagine {
+    top: 500px;
+    width: 150px;
+    right: 40px;
+  }
+  body.dark-mode .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 115px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .projects {
+    width: 165px;
+    position: absolute;
+    right: 60px;
+    top: 42px;
+  }
+
+  body.dark-mode .skills {
+    width: 110px;
+    position: absolute;
+    right: 60px;
+    top: 120px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  body.dark-mode .dark-mode-button.top-dark-mode-button {
+    position: absolute;
+    top: 140px;
+    left: 70px;
+  }
+
+  body.dark-mode .yahia {
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+  }
+  body.dark-mode .softwaredev {
+    width: 320px;
+    position: absolute;
+    top: 460px;
+    left: 194px;
+  }
+
+  body.dark-mode .email {
+    width: 370px;
+    position: absolute;
+    top: 550px;
+    left: 170px;
+  }
+
+  body.dark-mode .tel {
+    width: 220px;
+    position: absolute;
+    top: 600px;
+    left: 250px;
+  }
+  body.dark-mode .recd {
+    display: none;
+  }
+
+  body.dark-mode .logicimagine {
+    top: 700px;
+    width: 170px;
+    right: 350px;
+  }
+  body.dark-mode .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 170px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .projects {
+    width: 165px;
+    position: absolute;
+    right: 60px;
+    top: 170px;
+  }
+
+  body.dark-mode .skills {
+    width: 110px;
+    position: absolute;
+    right: 60px;
+    top: 250px;
+  }
+}
+@media screen and (max-width: 850px) {
+  body.dark-mode .precd {
+    height: 969px;
+    position: absolute;
+    left: -10;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 710px) {
+  body.dark-mode .logicimagine {
+    right: 200px;
+  }
+  body.dark-mode .precd {
+    height: 969px;
+    position: absolute;
+    left: -10;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 560px) {
+  body.dark-mode .yahia {
+    width: 400px;
+    position: relative;
+    top: 400px;
+    left: 53px;
+  }
+  body.dark-mode .softwaredev {
+    width: 350px;
+    position: absolute;
+    top: 460px;
+    left: 84px;
+  }
+
+  body.dark-mode .email {
+    width: 410px;
+    position: absolute;
+    top: 550px;
+    left: 50px;
+  }
+
+  body.dark-mode .tel {
+    width: 255px;
+    position: absolute;
+    top: 600px;
+    left: 130px;
+  }
+
+  body.dark-mode .logicimagine {
+    top: 700px;
+    width: 150px;
+    right: 170px;
+  }
+  body.dark-mode .arrowr {
+    position: absolute;
+    right: 5px;
+    top: 220px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .arrowr1 {
+    position: absolute;
+    right: 5px;
+    top: 300px;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(14px 12px 0px rgba(0, 0, 0, 0.25));
+  }
+
+  body.dark-mode .projects {
+    width: 165px;
+    position: absolute;
+    right: 60px;
+    top: 220px;
+  }
+
+  body.dark-mode .skills {
+    width: 110px;
+    position: absolute;
+    right: 60px;
+    top: 300px;
+  }
+}
